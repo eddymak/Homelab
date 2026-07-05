@@ -6,5 +6,6 @@ This repo documents the network design, hardware, services, and configurations u
 # Network Diagram
 # Hardware
 # Services
-# Automation
 # Security
+# Automation
+# Troubleshooting
