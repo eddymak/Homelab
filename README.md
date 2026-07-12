@@ -15,7 +15,7 @@ A single Protectli appliance runs OPNsense as the edge firewall/router. The WAN 
 
 The Temp port is being used temporarily to connect my Proxmox hypervisor, I will merge the 2 ports together once my MikroTik switch arrives. 
 
-Both the LAN and Temp are configured as trunk ports, this is required because the AP serves two SSIDs mapped to different VLANss, and the AP and Proxmox management networks are on separate VLAN as well.
+Both the LAN and Temp are configured as trunk ports, this is required because the AP serves two SSIDs mapped to different VLANs, and the AP and Proxmox management networks are on separate VLANs as well.
 
 The Proxmox hypervisor runs a single Linux Bridge (vmbr), and VLAN tags are assigned directly to the individual VMs.
 
