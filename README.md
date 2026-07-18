@@ -5,27 +5,29 @@ This repo documents the network design, hardware, services, and configurations u
 
 # Network Diagram
 <div align="center">
-  <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/14abb6fd-4545-4a1e-81c0-63863ab92206" />
+  <img width="663" height="991" alt="image" src="https://github.com/user-attachments/assets/2f8ba9c8-7820-4204-a47c-3ede98f26285" />
 </div>
 
 
 The network is simple, but a nice diagram is always helpful when explaining things. 
 
-A single Protectli appliance runs OPNsense as the edge firewall/router. The WAN port connects directly to the ONT box, and the LAN port connects to the HP Instant On AP. 
+A single Protectli appliance runs OPNsense as the edge firewall and router. The WAN interface connects directly to the ISP ONT, the LAN interface connects to the MikroTik CRS310.
 
-The Temp port is being used temporarily to connect my Proxmox hypervisor, I will merge the 2 ports together once my MikroTik switch arrives. 
+The CRS310 operates as the Layer 2 switch. All three connected switch ports are configured as trunk ports. This is required because:
 
-Both the LAN and Temp are configured as trunk ports, this is required because the AP serves two SSIDs mapped to different VLANs, and the AP and Proxmox management networks are on separate VLAN as well.
-
-The Proxmox hypervisor runs a single Linux Bridge (vmbr), and VLAN tags are assigned directly to the individual VMs.
+- The wireless access point broadcasts 2 SSIDs, each mapped to seperate VLANs.
+- Proxmox virtual machines are segmented using VLAN20.
+- The AP and Proxmox management interface is placed on a dedicated Management VLAN99.
 
 # Hardware
 
 ## Networking
 | Role          | Model         | OS            |    Notes         | 
 | ------------- | ------------- | ------------- | -------------    |
-| Edge firewall | Protectli Vault Pro VP2420    | OPNsense         | Intel Celeron J6412, 8GB DDR4 RAM, 128GB M.2 SATA, 4x 2.5 Gb ports |
-| WiFi Access Point             | HPE (Aruba) Instant On AP21      | - | 2 SSIDs for users and IoT devices |
+| Edge Firewall | Protectli Vault Pro VP2420    | OPNsense         | Intel Celeron J6412, 8GB DDR4 RAM, 128GB M.2 SATA SSD, 4x 2.5 Gb ports |
+| L2/L3 Switch     | MikroTik CRS310 | RouterOS    | 8x 2.5 Gb ports, 2x SFP+ ports |
+| WiFi Access Point             | HPE (Aruba) Instant On AP21      | - | 2 SSIDs for users and IoT networks |
+
 
 ## Servers
 | Role          | Model         | OS            |    Notes         | 
