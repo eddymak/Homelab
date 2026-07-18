@@ -37,9 +37,6 @@ The Proxmox hypervisor runs a single Linux Bridge (vmbr), and VLAN tags are assi
 # Automation
 
 # Troubleshooting
-## What to do when you buy a 2nd-hand server motherboard but don't know the management port IP address?
-I bought a 2nd-hand ASRock D1521D4I to run Proxmox. Since I don't have a VGA adapter, the only way to access the console (and boot from the Proxmox installer ISO USB) is through the IPMI remote KVM. Unfortunately, the seller did't provide the configured IPMI IP address. 
-Instead of running a network scan, which would take forever since I didn't even know the subnet, connect the port to your computer/local network, one of the following will happen:
- - The port is configured for DHCP. It will request an IP address from the network after plugging it in. Find the IP address by checking the DHCP lease history.
- - The port is configured with a static IP. It will (hopefully) broadcast ARP requests to look for the gateway. The configured IP address will be shown in the ARP request information in a packet capture.  *<- This was my case* <img width="1681" height="132" alt="image" src="https://github.com/user-attachments/assets/d3ff851f-f481-4b9c-904b-1a1a3945ca85" />
+This section documents the technical issues encountered during the development of this homelab.
 
+- [What to do when you buy a 2nd-hand device but you don't know the management port IP address?]('./Troubleshooting/What%20to%20do%20when%20you%20buy%20a%202nd-hand%20device%20but%20you%20don't%20know%20the%20management%20port%20IP%20address?)
