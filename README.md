@@ -39,4 +39,4 @@ The Proxmox hypervisor runs a single Linux Bridge (vmbr), and VLAN tags are assi
 # Troubleshooting
 This section documents the technical issues encountered during the development of this homelab.
 
-- [What to do when you buy a 2nd-hand device but you don't know the management port IP address?]('./Troubleshooting/What%20to%20do%20when%20you%20buy%20a%202nd-hand%20device%20but%20you%20don't%20know%20the%20management%20port%20IP%20address?)
+- [What to do when you buy a 2nd-hand device but you don't know the management port IP address?](Troubleshooting/What%20to%20do%20when%20you%20buy%20a%202nd-hand%20device%20but%20you%20don't%20know%20the%20management%20port%20IP%20address%3F.md)
