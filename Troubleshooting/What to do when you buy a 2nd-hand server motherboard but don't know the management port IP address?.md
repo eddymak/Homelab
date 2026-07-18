@@ -1,4 +1,4 @@
-# What to do when you buy a 2nd-hand server motherboard but don't know the management port IP address?
+# What to do when you buy a 2nd-hand device but you don't know the management port IP address?
 I bought a 2nd-hand ASRock D1521D4I to run Proxmox. Since I don't have a VGA adapter, the only way to access the console (and boot from the Proxmox installer ISO USB) is through the IPMI remote KVM. Unfortunately, the seller did't provide the configured IPMI IP address. 
 Instead of running a network scan, which would take forever since I didn't even know the subnet, connect the port to your computer/local network, one of the following will happen:
  - The port is configured for DHCP. It will request an IP address from the network after plugging it in. Find the IP address by checking the DHCP lease history.
