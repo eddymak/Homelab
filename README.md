@@ -35,6 +35,10 @@ The CRS310 operates as the Layer 2 switch. All three connected switch ports are 
 | VM  Host      | ASRock D1521D4I               | Proxmox VE       | Xeon D1521, 16GB DDR4 RAM, 2TB M.2 NVMe, 2x Gb ports |
 
 # Services
+This section lists the services/applications that are running in the environment.
+
+ - [Pi-hole](Services/Pi-hole.md)
+
 # Security
 # Automation
 
