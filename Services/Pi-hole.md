@@ -1,5 +1,5 @@
 # Pi-hole
-Pi-hole is an open-source DNS forwarder that filters DNS queries using community-maintained blocklists. It blocks requests to ads, tracking, malware, and phishing domains or other possibly harmful domains at the DNS level.
+Pi-hole is an open-source DNS forwarder that filters DNS queries using blocklists. It blocks requests to ads, tracking, malware, and phishing domains or other possibly harmful domains at the DNS level.
 Visit this [github repo](https://github.com/hagezi/dns-blocklists) or other places to get subscribed lists. 
 
 Typical DNS flow with Pi-hole would be:
