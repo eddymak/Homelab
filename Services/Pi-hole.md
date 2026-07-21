@@ -1,6 +1,5 @@
 # Pi-hole
-Pi-hole is an open-source DNS forwarder that filters DNS queries using blocklists. It blocks requests to ads, tracking, malware, and phishing domains or other possibly harmful domains at the DNS level.
-Visit this [github repo](https://github.com/hagezi/dns-blocklists) or other places to get subscribed lists. 
+Pi-hole is an open-source DNS forwarder and sinkhole that filters DNS queries using blocklists. It blocks requests to ads, tracking, malware, and phishing domains or other possibly harmful domains at the DNS level.
 
 Typical DNS flow with Pi-hole would be:
 <div align="center">
@@ -8,7 +7,7 @@ Typical DNS flow with Pi-hole would be:
 </div>
 
 In this environment, Pi-hole is deployed as a Docker container on an Ubuntu server. To ensure all DNS queries pass through Pi-hole:
- - Assign Pi-hole as the clients DNS server via DHCP
+ - Assign Pi-hole as the DNS server for clients via DHCP
  - Block all outbound DNS traffic except from Pi-hole on the edge firewall
  - Block DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and DNS-over-QUIC (DoQ) on the edge firewall.
 
@@ -61,10 +60,25 @@ You can choose from several pre-defined public recursive DNS providers or config
   <img width="388" height="554" alt="image" src="https://github.com/user-attachments/assets/43daf24d-a2aa-475c-be0c-ccfa588889b0" />
 </div>
 
+## Subscribed lists
+
+Pi-hole comes with a pre-subscribed list from [StevenBlack](https://github.com/StevenBlack/hosts), you can subscribe mores list for additional filtering.
+Here, I added the [Multi pro](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt) list from [hagezi](https://github.com/hagezi/dns-blocklists) to my setup
+
+You don't want to add to many list because:
+  - It may increase memory usage
+  - blocklists entries may overlap and thus provide little additional benefit
+  - More likely to trigger false positives
+
+<div align="center">
+  <img width="1641" height="1001" alt="image" src="https://github.com/user-attachments/assets/4e5eb980-0be5-4e6c-adb7-8df00562fad1" />
+</div>
+
+After adding the list, remember to run Tools → Update Gravity to download the latest entries
 
 ## Conditional forwarding
 
-## Subscribed lists
+
 
 
 # Security
