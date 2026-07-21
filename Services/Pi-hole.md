@@ -53,7 +53,7 @@ Pi-hole works right out of the box. Simply configure your devices to use the Pi-
 
 ## Upstream DNS Servers
 
-Pi-hole is a DNS forwarder and does not perform recursive DNS resolution itself. It forwards DNS queries to upstream DNS servers for recursive DNS resolution.
+Pi-hole does not perform recursive DNS resolution itself. It forwards DNS queries to upstream DNS servers for recursive DNS resolution.
 
 You can choose from several pre-defined public recursive DNS providers or configure your own. In this deployment, Quad9 DNS is used because it provides an additional layer of filtering.
 
