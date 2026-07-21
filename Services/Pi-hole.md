@@ -44,8 +44,33 @@ docker compose up -d
 ```
 
 The Pi-hole web GUI should be accessible now.
-<img width="1470" height="1149" alt="image" src="https://github.com/user-attachments/assets/fba2adaf-06ae-4d07-8d6c-f0a29fef9c42" />
-
+<div align="center">
+  <img width="735" height="574" alt="image" src="https://github.com/user-attachments/assets/fba2adaf-06ae-4d07-8d6c-f0a29fef9c42" />
+</div>
 
 # Configuration
+Pi-hole works right out of the box. Simply configure your devices to use the Pi-hole IP address as their DNS server to start filtering DNS queries. Below are some additional configuration options that I customized.
+
+## Upstream DNS Servers
+
+Pi-hole is a DNS forwarder and does not perform recursive DNS resolution itself. It forwards DNS queries to upstream DNS servers for recursive DNS resolution.
+
+You can choose from several pre-defined public recursive DNS providers or configure your own. In this deployment, Quad9 DNS is used because it provides an additional layer of filtering.
+
+<div align="center">
+  <img width="388" height="554" alt="image" src="https://github.com/user-attachments/assets/43daf24d-a2aa-475c-be0c-ccfa588889b0" />
+</div>
+
+
+## Conditional forwarding
+
+## Subscribed lists
+
+
 # Security
+
+## Enabling DNSSEC
+
+## Block all outbound DNS traffic except from Pi-hole on the edge firewall
+
+## Block DoH, DoT and DoQ
