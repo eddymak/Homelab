@@ -37,7 +37,7 @@ The CRS310 operates as the Layer 2 switch. All three connected switch ports are 
 # Services
 This section lists the services/applications that are running in the environment.
 
- - [Pi-hole](Services/Pi-hole.md)
+ - [Pi-hole](Services/Pi-Hole/Pi-hole.md)
 
 # Security
 # Automation
