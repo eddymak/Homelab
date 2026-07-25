@@ -59,7 +59,7 @@ Check the firewall logs to verify outbound traffic from the AP is permitted
 
 Review the outbound NAT configuration.
 
-The outbound NAT rule exists, but the Source field is configured as Address instead of Networ, so traffic from the subnet did not match the NAT rule and is not translated.
+The outbound NAT rule exists, but the Source field is configured as Address instead of Network, so traffic from the subnet did not match the NAT rule and is not translated.
 
 <img width="1786" height="366" alt="image" src="https://github.com/user-attachments/assets/0179266e-1eb5-42ed-8c06-05c4aa2ceb2e" />
 
