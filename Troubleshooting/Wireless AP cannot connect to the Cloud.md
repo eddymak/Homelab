@@ -1,4 +1,4 @@
-# Wireless AP Cannot Connect to the Cloud After Firewall Migration
+# Wireless AP Cannot Connect to the Instant On cloud
 
 The Instant On AP failed to connect to the Instant On cloud through the OPNsense firewall
 
