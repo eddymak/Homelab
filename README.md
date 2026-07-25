@@ -5,7 +5,8 @@ This repo documents the network design, hardware, services, and configurations u
 
 # Network Diagram
 <div align="center">
-  <img width="663" height="991" alt="image" src="https://github.com/user-attachments/assets/2f8ba9c8-7820-4204-a47c-3ede98f26285" />
+  <img width="664" height="991" alt="image" src="https://github.com/user-attachments/assets/409fffd9-1f73-46cd-84cd-c53f93329e4b" />
+
 </div>
 
 
