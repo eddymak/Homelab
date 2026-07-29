@@ -3,5 +3,6 @@
 # Firewall rules
 # NAT rules
 # WireGuard VPN
-# DHCP 
+# DHCP
+# Dynamic DNS
 # Security
