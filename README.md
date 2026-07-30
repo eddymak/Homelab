@@ -40,15 +40,15 @@ See [here](Networking/Network%20Configuration.md) for a more detailed network co
 # Services
 This section lists the services/applications that are running in the environment.
 
-## Infrastructure
+#### Infrastructure
  - [Pi-hole](Services/Pi-hole/Pi-hole.md)
  
 
-## Monitoring
+#### Monitoring
  - Prometheus
  - Grafana
 
-## Learning
+#### Learning
  - [GNS3](Services/GNS3/GNS3.md)
 
 # Security
