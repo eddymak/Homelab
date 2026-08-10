@@ -32,6 +32,23 @@
   
 
 # Firewall rules
+
+The firewall rules are designed according to the principle of least privilege. Rules are grouped into the categories below to improve readability and management.
+
+| Category | Purpose |
+| -------- | ------- |
+| ICMP filtering | Blocks all ICMP packets except from trusted sources | 
+| DNS filtering | Blocks all DNS traffic except to/from PiHole | 
+| WireGuard VPN | Controls WireGuard connectivity, allowing traffic between remote site and local subnet |
+| WAN inbound | Blocks inbound internet traffic for logging purpose | 
+| Security | Blocks traffic to and from IP addresses listed in the Spamhaus DROP list | 
+| Firewall management | Restricts access to the OPNsense administration interface to specific sources |
+| Internet access | Provides internet access while preventing access to internal address ranges |
+
+<img width="2903" height="1352" alt="image" src="https://github.com/user-attachments/assets/3dcad1d5-71ee-4723-84bd-3cedaf30469d" />
+
+As the network grows, I will keep updating the firewall rules for a more granular traffic control. 
+
 # NAT rules
   Outbound NAT is performed by OPNsense. Internal networks are translated to the WAN interface address to provide internet access.
   *Manual outbound NAT rule generation* is selected as I want complete control of my NAT rules.  
