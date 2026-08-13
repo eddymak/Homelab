@@ -35,9 +35,9 @@ File structure:
 
 Configuration files:
 
- - compose.yaml
- - datasource.yml: Define the Grafana data source
- - prometheus.yml: Define the Prometheus scrape targets
+ - [compose.yaml](compose.yaml)
+ - [datasource.yml](datasource.yml): Define the Grafana data source
+ - [prometheus.yml](prometheus.yml): Define the Prometheus scrape targets
 
 Using a single compose file allows docker compose to create a shared network for the containers. Containers on the same compose network can communicate with each other using their service names instead of IP addresses. For example, in the Grafana datasource.yml, Grafana can connect to Prometheus using the Prometheus service name in the URL:
 
