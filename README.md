@@ -42,12 +42,9 @@ This section lists the services/applications that are running in the environment
 
 #### Infrastructure
  - [Pi-hole](Services/Pi-hole/Pi-hole.md)
- 
 
 #### Monitoring
- - opnsense-exporter
  - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
- - 
 
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
