@@ -1,6 +1,6 @@
 # Prometheus & Grafana
 
-I use [Prometheus](https://github.com/prometheus/prometheus) & [Grafana](https://github.com/grafana/grafana) to monitor systems and services in my homelab. 
+I use [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://github.com/grafana/grafana) to monitor systems and services in my homelab. 
 
 Prometheus acts as the central metrics backend, collecting and storing time-series data from systems and services. Grafana provides an interface to query and visualise the data through dashboards.
 
