@@ -1,0 +1,62 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus:ro
+      - prom_data:/prometheus
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    user: "472:472"
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources:ro
+      - grafana_data:/var/lib/grafana
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+
+  opnsense-exporter:
+    image: ghcr.io/rknightion/opnsense-exporter:latest
+    container_name: opnsense-exporter
+    restart: unless-stopped
+
+    command:
+      - --opnsense.protocol=https
+      - --opnsense.address=${OPNSENSE_IP_ADDRESS}
+      - --exporter.instance-label=opnsense
+      - --web.listen-address=:8080
+      - --opnsense.insecure
+      - --exporter.disable-openvpn
+      - --exporter.disable-unbound
+
+
+    environment:
+      OPNSENSE_EXPORTER_OPS_API_KEY: ${OPNSENSE_API_KEY}
+      OPNSENSE_EXPORTER_OPS_API_SECRET: ${OPNSENSE_API_SECRET}
+
+    ports:
+      - "8080:8080"
+
+volumes:
+  prom_data:
+  grafana_data:
