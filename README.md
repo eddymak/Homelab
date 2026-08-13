@@ -45,6 +45,7 @@ This section lists the services/applications that are running in the environment
  
 
 #### Monitoring
+ - opnsense-exporter
  - Prometheus
  - Grafana
 
