@@ -46,8 +46,8 @@ This section lists the services/applications that are running in the environment
 
 #### Monitoring
  - opnsense-exporter
- - Prometheus
- - Grafana
+ - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
+ - 
 
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
