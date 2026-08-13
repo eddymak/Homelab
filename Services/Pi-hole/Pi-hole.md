@@ -28,10 +28,12 @@ Also update /etc/resolv.conf to use an external DNS server.
 ## Create the compose file
 Copy the compose.yaml from the [official repo](https://github.com/pi-hole/docker-pi-hole/#quick-start) to a directory and modify as needed. In this environment, only the following lines were changed:
 ```
+...
  - "8001:80/tcp" 
  - "4431:443/tcp"
-
+...
 FTLCONF_webserver_api_password: ${PIHOLE_PASSWORD}
+...
 ```
 The first two lines map different Ubuntu host ports to the Pi-hole web GUI to avoid port conflicts from other web services.
 The third line loads the Pi-hole web interface password from a .env file. 
