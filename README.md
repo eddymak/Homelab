@@ -43,15 +43,30 @@ This section lists the services/applications that are running in the environment
 
 #### Infrastructure
  - [Pi-hole](Services/Pi-hole/Pi-hole.md)
+ - *Planned:* Active Directory
+ - *Planned:*Home Assistant
+ - *Planned:*Ngnix
 
-#### Monitoring
+#### Security
+ - *Planned:*Network Security
+ - *Planned:*Web Security
+ - *Planned:*Endpoint Security
+ - *Planned:*DNS security
+ - *Planned:*Vulnerability Management
+
+#### Monitoring & Logging
  - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
+ - *Planned:*Splunk
+
+#### Backup & Recovery
+ - *Planned:*Proxmox Backup Server
 
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
 
-# Security
+
 # Automation
+
 
 # Troubleshooting
 This section documents the technical issues encountered during the development of this homelab.
