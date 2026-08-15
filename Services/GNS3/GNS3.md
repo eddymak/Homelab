@@ -1,7 +1,7 @@
 # GNS3
 GNS3 is a network emulation platform. Unlike other network simulation tools such as Cisco Packet Tracer, GNS3 runs real network device images, making it much more suitable for building and testing complex network topologies.
 
-In this environment, we will deploy the GNS3 Remote VM on Proxmox and connect to it using the GNS3 Desktop client.
+In this environment, GNS3 Remote VM is deployed on Proxmox and I am connecting to it using the GNS3 Desktop client.
 
 # Installation
 ## Installing GNS3 VM remote server on Proxmox
