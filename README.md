@@ -3,6 +3,28 @@ This is my personal playground for networking, cybersecurity, and automation. Th
 
 This repo documents the network design, hardware, services, and configurations used in my homelab setup. It is still a work in progress. Feel free to explore and open an issue if you have any questions or suggestions for improvement.
 
+# Services
+Services/applications that are running in the environment.
+
+#### Infrastructure
+ - [Pi-hole](Services/Pi-hole/Pi-hole.md)
+ - *Planned:* Active Directory
+ - *Planned:* Home Assistant
+ - *Planned:* Ngnix
+
+#### Monitoring & Logging
+ - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
+ - *Planned:* Splunk
+
+#### Backup & Recovery
+ - *Planned:* Proxmox Backup Server
+
+#### Learning
+ - [GNS3](Services/GNS3/GNS3.md)
+
+#### Security
+
+
 # Network Diagram
 <div align="center">
   <img width="664" height="990" alt="image" src="https://github.com/user-attachments/assets/7777cd3a-88ec-42ee-b4c1-09814fccf733" />
@@ -38,26 +60,6 @@ See [here](Networking/Network%20Configuration.md) for a more detailed network co
 | ------------- | ------------- | ------------- | -------------    |
 | VM  Host      | ASRock D1521D4I               | Proxmox VE       | Xeon D1521, 16GB DDR4 RAM, 2TB M.2 NVMe, 2x Gb ports |
 
-# Services
-This section lists the services/applications that are running in the environment.
-
-#### Infrastructure
- - [Pi-hole](Services/Pi-hole/Pi-hole.md)
- - *Planned:* Active Directory
- - *Planned:* Home Assistant
- - *Planned:* Ngnix
-
-#### Monitoring & Logging
- - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
- - *Planned:* Splunk
-
-#### Backup & Recovery
- - *Planned:* Proxmox Backup Server
-
-#### Learning
- - [GNS3](Services/GNS3/GNS3.md)
-
-#### Security
 
 # Automation
 
