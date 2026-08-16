@@ -47,13 +47,6 @@ This section lists the services/applications that are running in the environment
  - *Planned:* Home Assistant
  - *Planned:* Ngnix
 
-#### Security
- - *Planned:* Network Security
- - *Planned:* Web Security
- - *Planned:* Endpoint Security
- - *Planned:* DNS security
- - *Planned:* Vulnerability Management
-
 #### Monitoring & Logging
  - [Prometheus and Grafana](Services/Monitoring/Prometheus_and_Grafana.md)
  - *Planned:* Splunk
@@ -64,6 +57,7 @@ This section lists the services/applications that are running in the environment
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
 
+#### Security
 
 # Automation
 
