@@ -43,7 +43,7 @@ The CRS310 operates as the Layer 2 switch. All three connected switch ports are 
 - Proxmox virtual machines are segmented using VLAN20.
 - The AP and Proxmox management interface is placed on a dedicated Management VLAN99.
 
-See [here](Networking/Network%20Configuration.md) for a more detailed network configuration.
+See here for for a more detailed [wired](Networking/Network%20Configuration.md) and [wireless](Networking/Aruba%20AP.md) configuration.
 
 # Hardware
 
