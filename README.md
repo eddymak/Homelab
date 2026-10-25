@@ -68,3 +68,4 @@ See here for for a more detailed [wired](Networking/Network%20Configuration.md) 
 This section documents the technical issues encountered during the development of this homelab.
 - [Wireless AP cannot connect to the Instant On cloud](Troubleshooting/Wireless%20AP%20cannot%20connect%20to%20the%20Cloud.md)
 - [What to do when you buy a 2nd-hand device but you don't know the management port IP address?](Troubleshooting/What%20to%20do%20when%20you%20buy%20a%202nd-hand%20device%20but%20you%20don't%20know%20the%20management%20port%20IP%20address%3F.md)
+- [Troubleshooting NPS RADIUS authentication](/Services/Active%20Directory/Active%20Directory.md#logging-and-troubleshooting)
