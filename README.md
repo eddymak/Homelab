@@ -8,7 +8,7 @@ Services/applications that are running in the environment.
 
 #### Infrastructure
  - [Pi-hole](Services/Pi-hole/Pi-hole.md)
- - [Active Directory](Service/Active#Directory/Active#Directory.md)
+ - [Active Directory](Service/Active%20Directory/Active%20Directory.md)
  - *Planned:* Home Assistant
  - *Planned:* Ngnix
 
