@@ -40,9 +40,9 @@
   VLAN99 is used as the MGMT VLAN. Not all devices support VLAN tagging out of the box, so native VLAN are used to assign untagged frames to MGMT VLAN. Native VLANs can be enabled on the page Bridge -> Ports using the PVID option:
     <img width="749" height="197" alt="image" src="https://github.com/user-attachments/assets/c96cbe38-f607-4988-a5d4-02193f4569a8" />
   
-  And the untagged option on the page Bridge -> VLANs:
-    <img width="599" height="456" alt="image" src="https://github.com/user-attachments/assets/d5c13a4a-01e9-4ba7-b154-abc32dbb0f7d" />
-
+  And the untagged option on the page Bridge -> VLANs: 
+  
+  <img width="599" height="456" alt="image" src="https://github.com/user-attachments/assets/d5c13a4a-01e9-4ba7-b154-abc32dbb0f7d" />
 
 # Firewall rules
 
