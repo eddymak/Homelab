@@ -27,8 +27,7 @@ Services/applications that are running in the environment.
 
 # Network Diagram
 <div align="center">
-  <img width="664" height="990" alt="image" src="https://github.com/user-attachments/assets/7777cd3a-88ec-42ee-b4c1-09814fccf733" />
-
+  <img width="332" height="595" alt="image" src="https://github.com/user-attachments/assets/a6514407-4f24-4c1c-9a5e-c031fe17128e" />
 
 </div>
 
