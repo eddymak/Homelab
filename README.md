@@ -17,7 +17,7 @@ Services/applications that are running in the environment.
  - *Planned:* Splunk
 
 #### Backup & Recovery
- - *Planned:* Proxmox Backup Server
+ - [Veeam Backup & Replication (Community Edition)](Services/VeeamBackup.md)
 
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
