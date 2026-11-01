@@ -17,7 +17,7 @@ Services/applications that are running in the environment.
  - *Planned:* Splunk
 
 #### Backup & Recovery
- - [Veeam Backup & Replication (Community Edition)](Services/VeeamBackup.md)
+ - [Veeam Backup & Replication](Services/Backup%20&%20Restore/Veeam%20Backup.md)
 
 #### Learning
  - [GNS3](Services/GNS3/GNS3.md)
